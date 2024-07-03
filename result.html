@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cms.png" alt="CMS Logo" class="logo-img">
+            <span>Course Matching System</span>
+        </div>
+        <nav>
+            <button class="nav-btn"><img src="home.png" alt="Home"> Home</button>
+            <button class="nav-btn"><img src="profile.png" alt="Profile"> Profile</button>
+            <button class="nav-btn sign-out"><img src="signout.png" alt="Sign out"> Sign out</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Name: </h1>
+        <div class="matched-container">
+            <h2>MATCHED SUBJECT</h2>
+        </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SUBJECT</th>
+                        <th>STRAND</th>
+                        <th>SECTION</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Rows will be added here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
