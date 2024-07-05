@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Management System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cms.png">
 </head>
 <body>
     <header>
@@ -13,13 +14,14 @@
             <span>Course Matching System</span>
         </div>
         <nav>
-            <button class="nav-btn"><img src="home.png" alt="Home"> Home</button>
-            <button class="nav-btn"><img src="profile.png" alt="Profile"> Profile</button>
-            <button class="nav-btn sign-out"><img src="signout.png" alt="Sign out"> Sign out</button>
+            <a href="index.html" class="nav-btn"><img src="home.png" alt="Home"> Home</a>
+            <a href="profile.html" class="nav-btn"><img src="profile.png" alt="Profile"> Profile</a>
+            <!--for logout??-->
+            <a href="logout.html" class="nav-btn sign-out"><img src="signout.png" alt="Sign out"> Sign out</a>
         </nav>
     </header>
     <main>
-        <h1>Name: </h1>
+        <h1>Name: <!--how to add name from py--></h1>
         <div class="matched-container">
             <h2>MATCHED SUBJECT</h2>
         </div>
@@ -33,11 +35,10 @@
                     </tr>
                 </thead>
                 <tbody id="table-body">
-                    <!-- Rows will be added here by JavaScript -->
+                    <!-- rows will be added here. dunno how -->
                 </tbody>
             </table>
         </div>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
