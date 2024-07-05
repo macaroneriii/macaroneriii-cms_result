@@ -40,9 +40,16 @@ nav {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 20px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 5px;
+    text-decoration: none;  /* This removes the underline */
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: #2a2a4a;
 }
 
 .nav-btn img {
@@ -52,6 +59,10 @@ nav {
 
 .sign-out {
     background-color: #1c1c39;
+}
+
+.sign-out:hover {
+    background-color: #2a2a4a;
 }
 
 main {
@@ -79,18 +90,24 @@ table {
 }
 
 th, td {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
 th {
     background-color: #2a2a3e;
     color: white;
+    font-weight: bold;
 }
 
 tbody tr {
     background-color: #1c1c39;
     color: white;
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: #2a2a4a;
 }
 
 tbody tr:nth-child(even) td:nth-child(2) {
